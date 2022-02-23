@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #40bfff;
+  --secondary-color: #ff4858;
+  --shade-color: #bcddfe;
+  --shadow: #373737;
+  --text-color: #22262a;
+  --background: #f6f7f8;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  font-family: sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.container__title {
+  font-family: poppins;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--text-color);
+}
+.hot-deal {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+}
+.hot-deal > div {
+  margin: 15px;
+}
+.sidebar {
+  flex: 1.25;
+}
+.container {
+  padding: 1rem;
+  background: var(--background);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  font-family: 'proxima nova';
+}
+.sidebar ul li {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px;
+}
+.sidebar ul li.active {
+  color: var(--primary-color);
+}
+.ranger__range {
+  width: 100%;
+}
+.container__colors {
+  margin: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.color {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.2s ease;
+}
+.red {
+  background: #fc3e39;
+}
+.color.active::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  border: 2px solid;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+.red::before {
+  border-color: #fc3e39;
+}
+.black {
+  background: #171717;
+}
+.black::before {
+  border-color: #171717;
+}
+.blue {
+  background: #006cff;
+}
+.blue::before {
+  border-color: #006cff;
+}
+
+.yellow {
+  background: #fff600;
+}
+.yellow::before {
+  border-color: #fff600;
+}
+.purple {
+  background: #ff00b4;
+}
+.purple::before {
+  border-color: #ff00b4;
+}
+.gray {
+  background: #efdfdf;
+}
+.gray::before {
+  border-color: #efdfdf;
+}
+
+.container button {
+  background: transparent;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: poppins;
+}
+.right__side {
+  flex: 4;
+  min-height: 100vh;
+}
+.right__side .card {
+  position: relative;
+  min-height: 50vh;
+  width: 100%;
+  background: var(--primary-color);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 5rem;
+  margin-bottom: 1rem;
+}
+.card img {
+  position: absolute;
+  top: -35px;
+  right: 80px;
+}
+.card__title {
+  font-family: poppins, sans-serif;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 500;
+  width: 75%;
+}
+.card__description {
+  font-family: poppins;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 5px;
+}
+.card__button {
+  position: relative;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 24px;
+  cursor: pointer;
+}
+.card__button::before {
+  position: absolute;
+  content: '';
+  bottom: -5px;
+  left: 0;
+  background: #fff;
+  height: 2px;
+  width: 40px;
+}
+/* Responsive start */
+
+@media screen and (max-width: 1270px) {
+  .card img {
+    transform: scale(0.9);
+    left: 400px;
+    top: 0px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .right__side .card {
+    padding: 5rem 15px;
+  }
+  .card img {
+    left: unset;
+    right: -45px;
+    top: 1rem;
+  }
+  .card__title,
+  .card__description {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 876px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card img {
+    position: unset;
+  }
+  .card__title,
+  .card__description {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 755px) {
+  .hot-deal {
+    flex-direction: column;
+  }
+  .card__about {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .card {
+    padding: 15px;
+  }
+  .card img {
+    transform: scale(0.7);
+  }
+}
+/* sidebar and card ENDS */

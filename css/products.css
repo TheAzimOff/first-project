@@ -1,27 +1,14 @@
+@import 'main.css';
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 :root {
-  --primary-color: #40bfff;
-  --secondary-color: #ff4858;
-  --shade-color: #bcddfe;
-  --shadow: #373737;
   --text-color: #22262a;
   --background: #f6f7f8;
-  font-family: sans-serif;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
-html,
-body {
-  font-family: sans-serif;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 .container__title {
-  font-family: poppins;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -49,7 +36,7 @@ body {
 
 .sidebar ul {
   list-style: none;
-  font-family: 'proxima nova';
+  font-family: ProximaNova-Regular;
 }
 .sidebar ul li {
   display: flex;
@@ -129,8 +116,7 @@ body {
   border: none;
   outline: none;
   text-transform: uppercase;
-  font-weight: 500;
-  font-family: poppins;
+  font-family: Poppins-Medium;
 }
 .right__side {
   flex: 4;
@@ -153,15 +139,13 @@ body {
   right: 80px;
 }
 .card__title {
-  font-family: poppins, sans-serif;
+  font-family: Poppins-Medium, sans-serif;
   font-size: 30px;
   line-height: 45px;
-  font-weight: 500;
   width: 75%;
 }
 .card__description {
-  font-family: poppins;
-  font-weight: 400;
+  font-family: Poppins-Regular;
   font-size: 14px;
   line-height: 21px;
   margin-top: 5px;
@@ -171,8 +155,7 @@ body {
   border: none;
   background: transparent;
   color: #fff;
-  font-family: poppins;
-  font-weight: 600;
+  font-family: Poppins-SemiBold;
   font-size: 12px;
   text-transform: uppercase;
   margin-top: 24px;

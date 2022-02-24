@@ -1,3 +1,11 @@
+@import url(./hero.css);
+
+
+
+/* ! Imported Styles */
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -41,5 +49,4 @@ html,body{
 body{
     font-family: "Poppins-Medium";
 }
-
 

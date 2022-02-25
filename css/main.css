@@ -1,3 +1,11 @@
+@import url(./hero.css);
+
+
+
+/* ! Imported Styles */
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +13,9 @@
 }
 
 html,body{
-    overflow-x: hidden;
     scroll-behavior: smooth;
+    min-height: 100vh;
+    width: 100%;
 }
 
 /** Variables */
@@ -41,5 +50,4 @@ html,body{
 body{
     font-family: "Poppins-Medium";
 }
-
 

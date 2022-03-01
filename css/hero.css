@@ -374,6 +374,7 @@ padding-top: 30px;
         background-repeat: no-repeat;
         background-position: center;
         min-height: 206px;
+        border-radius: 5px;
     }
     .hero-content {
         padding-top: 22px;

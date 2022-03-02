@@ -62,6 +62,9 @@
   position: relative;
   transition: all 0.2s ease;
 }
+.blue {
+  border-color: #006cff;
+}
 .color::before {
   content: '';
   position: absolute;
